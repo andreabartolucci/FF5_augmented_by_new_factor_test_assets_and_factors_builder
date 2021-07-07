@@ -1,53 +1,83 @@
-This script allows the user to replicate the test portfolios construction methodology based on bivariate sorts described in Fama and French (2015) (used to test their 3 and 5 factors models) and to extend it including a new measure (hereinafter referred to as NF, which stands for New Factor) to be used in the sorts (together with Size, Book-to-Market, Operating Profitability and Investments). The measure is an arbitrary input, the user can pass either one or multiple files the procedure, each file contain either one or more measure, organized in columns.
+This repository contains the following scripts.
 
-This script builds the following portfolios following Fama and Frech (2015):
+**- factors_builders_FF5_2x2x2x2x2_augment_by_candidate_factor_working.ipynb**
+        This script replicates the Fama French 5 (2x2x2x2) risk factors SMB, HML, RMW, and CMA, in addition to the excess market risk factor, and augments the factor set with a candidate factor based on measures pass by the user in a file or a a list of files. The data come from CRSP for pricing related items and Compustat for fundamental data. The data are accessed through WRDS. This script has been adapted from the Fama French 3 factors script posted on WRDS, written by Qingyi (Freda) Song Drechsler in April 2018 and updated in June 2020.<br>(https://wrds-www.wharton.upenn.edu/pages/support/applications/python-replications/fama-french-factors-python/<br>https://www.fredasongdrechsler.com/full-python-code/fama-french)"
 
-- 4 5x5 bivariate sorts portfolios of excess returns with independent sort
-    - SIZExINV
-    - SIZExOP
-    - SIZExBM
-    - SIZExNF
-    
-- 6 2x4X4 three-way sorts portfolios of excess returns with size dependent sort 
+
+**- factors_builders_FF5_2x2_augment_by_candidate_factor_working.ipynb**
+        This script replicates the Fama French 5 (2x2) risk factors SMB, HML, RMW, and CMA, in addition to the excess market risk factor, and augments the factor set with a candidate factor based on measures pass by the user in a file or a a list of files. The data come from CRSP for pricing related items and Compustat for fundamental data. The data are accessed through WRDS. This script has been adapted from the Fama French 3 factors script posted on WRDS, written by Qingyi (Freda) Song Drechsler in April 2018 and updated in June 2020.<br>(https://wrds-www.wharton.upenn.edu/pages/support/applications/python-replications/fama-french-factors-python/<br>https://www.fredasongdrechsler.com/full-python-code/fama-french)"
+        
+
+**- factors_builders_FF5_2x3_augment_by_candidate_factor_working.ipynb**
+        This script replicates the Fama French 5 (2x3) risk factors SMB, HML, RMW, and CMA, in addition to the excess market risk factor, and augments the factor set with a candidate factor based on measures pass by the user in a file or a a list of files. The data come from CRSP for pricing related items and Compustat for fundamental data. The data are accessed through WRDS. This script has been adapted from the Fama French 3 factors script posted on WRDS, written by Qingyi (Freda) Song Drechsler in April 2018 and updated in June 2020.<br>(https://wrds-www.wharton.upenn.edu/pages/support/applications/python-replications/fama-french-factors-python/<br>https://www.fredasongdrechsler.com/full-python-code/fama-french)"
+        
+
+**- Three-way_Sort_Test_portfolios_builder.ipynb**
+    This script allows the user to replicate the test portfolios construction methodology based on three-way sorts described in Fama and French (2015) (used to test their 3 and 5 factors models) and to extend it including a new measure (hereinafter referred to as NF, which stands for New Factor) to be used in the sorts (together with Size, Book-to-Market, Operating Profitability and Investments). The measure is an arbitrary input, the user can pass either one or multiple files the procedure, each file contain either one or more measure, organized in columns.
+
+    This script builds the following portfolios following Fama and Frech (2015):
+
+    - 6 2x4X4 three-way sorts portfolios of excess returns with size dependent sort 
+        - SIZExBMxINV
+        - SIZExBMxOP
+        - SIZExBMxNF
+        - SIZExINVxOP
+        - SIZExINVxNF
+        - SIZExOPxNF
+
+    However, some more three-way sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
     - SIZExBMxINV
     - SIZExBMxOP
     - SIZExBMxNF
     - SIZExINVxOP
     - SIZExINVxNF
-    - SIZExOPxNF    
-    
-However, some more bivariate sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
-- SIZExBM
-- SIZExINV
-- SIZExOP
-- SIZExNF
-- BMxINV
-- BMxOP
-- BMxNF
-- INVxOP
-- INVxNF
-- OPxNF
-- SIZExBMxINV
-- SIZExBMxOP
-- SIZExBMxNF
-- SIZExINVxOP
-- SIZExINVxNF
-- SIZExOPxNF
+    - SIZExOPxNF
+
+    The methodology follows Fama and French (2015):
+
+    - 2x4x4 three-way sorts:
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_op_inv.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_inv.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_op.html
+ 
+**- Bivariate_Sort_Test_portfolios_builder.ipynb**
+    This script allows the user to replicate the test portfolios construction methodology based on bivariate sorts described in Fama and French (2015) (used to test their 3 and 5 factors models) and to extend it including a new measure (hereinafter referred to as NF, which stands for New Factor) to be used in the sorts (together with Size, Book-to-Market, Operating Profitability and Investments). The measure is an arbitrary input, the user can pass either one or multiple files the procedure, each file contain either one or more measure, organized in columns.
+
+    This script builds the following portfolios following Fama and Frech (2015):
+
+    - 4 5x5 bivariate sorts portfolios of excess returns with independent sort
+        - SIZExINV
+        - SIZExOP
+        - SIZExBM
+        - SIZExNF
+
+    However, some more bivariate sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
+    - SIZExBM
+    - SIZExINV
+    - SIZExOP
+    - SIZExNF
+    - BMxINV
+    - BMxOP
+    - BMxNF
+    - INVxOP
+    - INVxNF
+    - OPxNF
+
+    The methodology follows Fama and French (2015):
+    - 5x5 bivariate sorts:
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_op_inv.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_inv.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_op.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_inv.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_op.html
+        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports.html
 
 
-The methodology follows Fama and French (2015):
-- 5x5 bivariate sorts:
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_op_inv.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_inv.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_op.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_inv.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_op.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports.html
 
-- 2x4x4 three-way sorts:
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_op_inv.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_inv.html
-    - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_op.html
+
+
+
+
 
 
 Research notes:
@@ -76,7 +106,7 @@ Variable definitions (https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Da
 
 Techincal notes:
 
-- In order to tun the script one has to connect ot the WRDS databases and have a valid WRDS account. Here are the details on how to set up a connection or run the scrip on the WRDS cloud.<br>https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/python-wrds-cloud/<br>https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/python-from-your-computer/
+- In order run the script one has to connect ot the WRDS databases and have a valid WRDS account. Here are the details on how to set up a connection or run the scrip on the WRDS cloud.<br>https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/python-wrds-cloud/<br>https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/python-from-your-computer/
 - WRDS Python library documentation
 https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/querying-wrds-data-python/
 
