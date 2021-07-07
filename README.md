@@ -15,62 +15,63 @@ This repository contains the following scripts.
 **- Three-way_Sort_Test_portfolios_builder.ipynb**
     This script allows the user to replicate the test portfolios construction methodology based on three-way sorts described in Fama and French (2015) (used to test their 3 and 5 factors models) and to extend it including a new measure (hereinafter referred to as NF, which stands for New Factor) to be used in the sorts (together with Size, Book-to-Market, Operating Profitability and Investments). The measure is an arbitrary input, the user can pass either one or multiple files the procedure, each file contain either one or more measure, organized in columns.
 
-    This script builds the following portfolios following Fama and Frech (2015):
+This script builds the following portfolios following Fama and Frech (2015):
 
-    - 6 2x4X4 three-way sorts portfolios of excess returns with size dependent sort 
-        - SIZExBMxINV
-        - SIZExBMxOP
-        - SIZExBMxNF
-        - SIZExINVxOP
-        - SIZExINVxNF
-        - SIZExOPxNF
+- 6 2x4X4 three-way sorts portfolios of excess returns with size dependent sort 
+- SIZExBMxINV
+- SIZExBMxOP
+- SIZExBMxNF
+- SIZExINVxOP
+- SIZExINVxNF
+- SIZExOPxNF
 
-    However, some more three-way sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
-    - SIZExBMxINV
-    - SIZExBMxOP
-    - SIZExBMxNF
-    - SIZExINVxOP
-    - SIZExINVxNF
-    - SIZExOPxNF
+However, some more three-way sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
+- SIZExBMxINV
+- SIZExBMxOP
+- SIZExBMxNF
+- SIZExINVxOP
+- SIZExINVxNF
+- SIZExOPxNF
 
-    The methodology follows Fama and French (2015):
+The methodology follows Fama and French (2015):
 
-    - 2x4x4 three-way sorts:
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_op_inv.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_inv.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_op.html
+- 2x4x4 three-way sorts:
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_op_inv.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_inv.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/32_ports_me_beme_op.html
+ 
  
 **- Bivariate_Sort_Test_portfolios_builder.ipynb**
     This script allows the user to replicate the test portfolios construction methodology based on bivariate sorts described in Fama and French (2015) (used to test their 3 and 5 factors models) and to extend it including a new measure (hereinafter referred to as NF, which stands for New Factor) to be used in the sorts (together with Size, Book-to-Market, Operating Profitability and Investments). The measure is an arbitrary input, the user can pass either one or multiple files the procedure, each file contain either one or more measure, organized in columns.
 
-    This script builds the following portfolios following Fama and Frech (2015):
+This script builds the following portfolios following Fama and Frech (2015):
 
-    - 4 5x5 bivariate sorts portfolios of excess returns with independent sort
-        - SIZExINV
-        - SIZExOP
-        - SIZExBM
-        - SIZExNF
+- 4 5x5 bivariate sorts portfolios of excess returns with independent sort
+- SIZExINV
+- SIZExOP
+- SIZExBM
+- SIZExNF
 
-    However, some more bivariate sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
-    - SIZExBM
-    - SIZExINV
-    - SIZExOP
-    - SIZExNF
-    - BMxINV
-    - BMxOP
-    - BMxNF
-    - INVxOP
-    - INVxNF
-    - OPxNF
+However, some more bivariate sorts portfolios are built, besides the Fama and French (2015), the total set consists of:
+- SIZExBM
+- SIZExINV
+- SIZExOP
+- SIZExNF
+- BMxINV
+- BMxOP
+- BMxNF
+- INVxOP
+- INVxNF
+- OPxNF
 
-    The methodology follows Fama and French (2015):
-    - 5x5 bivariate sorts:
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_op_inv.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_inv.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_op.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_inv.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_op.html
-        - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports.html
+The methodology follows Fama and French (2015):
+- 5x5 bivariate sorts:
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_op_inv.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_inv.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_beme_op.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_inv.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports_me_op.html
+- https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/tw_5_ports.html
 
 
 
